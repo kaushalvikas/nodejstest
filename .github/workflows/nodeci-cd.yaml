@@ -25,7 +25,7 @@ jobs:
 
             cd /var/www/nodejs
 
-            chown -R ubuntu:ubuntu /var/www/nodejs
+            sudo chown -R ubuntu:ubuntu /var/www/nodejs
 
             git config --global --add safe.directory /var/www/nodejs
 
