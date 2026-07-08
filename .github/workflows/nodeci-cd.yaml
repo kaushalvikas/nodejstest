@@ -21,5 +21,5 @@ jobs:
           username: $((secerts.SSH_USER))
           key: $((secerts.SSH_PRIVATE_KEY))
           script: |
-          docker-compose up -d --build
+            docker-compose up -d --build
 
