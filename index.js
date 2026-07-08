@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Node.js CI/CD Demo</title>
+        <title>Node.js CI/CD</title>
         <style>
             body {
                 margin: 0;
@@ -57,7 +57,7 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
         <div class="container">
-            <h1>🚀 Deployment Successful!</h1>
+            <h1>🚀 Deployment Successful! V1 </h1>
             <p>Welcome to the <strong>Node.js CI/CD Demo</strong>.</p>
             <p class="status">✅ Application is running successfully.</p>
             <p><strong>Environment:</strong> Production</p>
