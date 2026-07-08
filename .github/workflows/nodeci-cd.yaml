@@ -17,9 +17,9 @@ jobs:
       - name: Deploy application
         uses: appleboy/ssh-action@v1
         with:
-          host: $((secerts.SSH_HOST))
-          username: $((secerts.SSH_USER))
-          key: $((secerts.SSH_PRIVATE_KEY))
+          host: ${{secerts.SSH_HOST}}
+          username: ${{secerts.SSH_USER}}
+          key: ${{secerts.SSH_PRIVATE_KEY}}
           script: |
             docker-compose up -d --build
 
