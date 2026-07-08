@@ -1,0 +1,25 @@
+name: node-cicd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu:latest
+
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+     
+      - name: Deploy application
+        uses: applyboy/ssh-action@v1
+        with:
+          host: $((secerts.SSH_HOST))
+          username: $((secerts.SSH_USER))
+          key: $((secerts.SSH_PRIVATE_KEY))
+          script: |
+          docker-compose up -d --build
+
