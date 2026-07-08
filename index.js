@@ -59,8 +59,8 @@ const server = http.createServer((req, res) => {
         <div class="container">
             <h1>🚀 Now The Deployment Successful Completed! </h1>
             <p>Welcome to the <strong>Node.js CI/CD</strong>.</p>
-            <p class="status">✅ Application is running successfully.</p>
-            <p><strong>Environment:</strong> Production</p>
+            <p class="status">Application is running successfully.</p>
+            <p><strong>Environment:</strong> Production Server</p>
             <p><strong>Server Time:</strong> ${new Date().toLocaleString()}</p>
 
             <footer>
