@@ -25,5 +25,7 @@ jobs:
 
             cd /var/www/nodejs
 
+            docker compose down
+
             docker compose up -d --build
 
