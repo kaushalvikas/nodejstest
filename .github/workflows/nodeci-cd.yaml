@@ -25,6 +25,8 @@ jobs:
 
             cd /var/www/nodejs
 
+            git config --global --add safe.directory /var/www/nodejs
+
             git pull origin main
 
             docker compose up -d --build
