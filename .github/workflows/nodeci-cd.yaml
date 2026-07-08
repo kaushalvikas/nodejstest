@@ -11,8 +11,6 @@ jobs:
 
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
 
       - name: Deploy application
         uses: appleboy/ssh-action@v1
@@ -24,6 +22,10 @@ jobs:
             set -e
 
             cd /var/www/nodejs
+
+            git fetch origin main
+
+            git reset --hard origin/main
 
             docker compose down
 
